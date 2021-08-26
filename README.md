@@ -9,3 +9,7 @@ For now I have:
   - Golang
   - Golang (async)
   - C++
+
+I tested on my Macbook pro 16" base model
+
+I used the time utility to show execution time
