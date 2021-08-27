@@ -9,6 +9,9 @@ For now I have:
   - Golang
   - Golang (async)
   - C++
+  - Swift
+  - C#
+  - Java
 
 I tested on my Macbook pro 16" base model
 
