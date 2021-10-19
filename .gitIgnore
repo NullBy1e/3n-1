@@ -4,6 +4,7 @@ collatz.out
 collatz_infinite
 .DS_STORE
 collatz.class
+results.txt
 obj/
 bin/
 3n+1.csproj
