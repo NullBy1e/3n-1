@@ -1,6 +1,5 @@
 #!/bin/bash 
 
-
 collatz () {
   n=$1
   echo $n
