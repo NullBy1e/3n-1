@@ -2,15 +2,16 @@
 
 collatz () {
   n=$1
-  echo $n
+  printf "$n,"
   if [[ "$n" -eq 1 ]] || [[ "$n" -eq 2 ]]; then
-    echo -e "\n"
+    printf "\n"
   else
     if [[ $(($n % 2)) -eq 0 ]]; then
       final=$(($n/2))
       collatz $final
     else
       final=$((n*3+1))
+      collatz $final
     fi 
   fi 
 }
