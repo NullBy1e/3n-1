@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"strconv"
 	"strings"
 	"sync"
@@ -10,14 +9,9 @@ import (
 
 func main() {
 	fmt.Println("MainNumber, Parts")
-	numbers_raw := os.Args[1]
-	numbers, err := strconv.Atoi(numbers_raw)
-	if err != nil {
-		panic(err)
-	}
-	results := make(chan string, numbers)
+	results := make(chan string, 0)
 	var wg sync.WaitGroup
-	for i := 1; i <= numbers; i++ {
+	for i := 1; i > 0; i++ {
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
@@ -31,7 +25,6 @@ func main() {
 		wg.Wait()
 		close(results)
 	}()
-	fmt.Println("Finished")
 }
 
 func calculateCollatz(number int) []string {

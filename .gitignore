@@ -2,6 +2,7 @@ collatz
 collatz_async
 collatz.out
 collatz_infinite
+collatz_infinite_async
 .DS_STORE
 collatz.class
 results.txt
