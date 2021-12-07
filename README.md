@@ -12,6 +12,7 @@ For now I have:
   - Swift
   - C#
   - Java
+  - Bash
 
 I tested on my Macbook pro 16" base model
 
