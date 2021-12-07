@@ -7,3 +7,7 @@ collatz.class
 obj/
 bin/
 3n+1.csproj
+# vim swap files
+.*.swp
+.*.swo
+*.out
