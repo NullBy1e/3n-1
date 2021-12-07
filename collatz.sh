@@ -12,12 +12,11 @@ collatz () {
     else
       final=$((n*3+1))
       collatz $final
-    fi 
-  fi 
+    fi
+  fi
 }
 
 numbers=$1
 for (( i=1; i<=$numbers; i++)); do
-  collatz $i 
+  collatz $i
 done
-  
