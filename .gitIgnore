@@ -1,9 +1,0 @@
-collatz
-collatz_async
-collatz.out
-collatz_infinite
-.DS_STORE
-collatz.class
-obj/
-bin/
-3n+1.csproj
