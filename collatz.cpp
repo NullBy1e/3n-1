@@ -16,11 +16,16 @@ void calculateCollatz(int number){
             calculateCollatz(final_number);
         }
     }
+    return;
 }
 
 int main(int argc, char *argv[]) {
     cout << "MainNumber, Parts" << "\n";
     char *p;
+    if (argc < 2){
+        cerr << "pass number to argv\n";
+        return 1;
+    }
     int numbers = strtol(argv[1], &p, 10);
     for (int i = 1; i <= numbers;i++){
         calculateCollatz(i);
