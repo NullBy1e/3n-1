@@ -3,16 +3,16 @@
 
 using namespace std;
 
-void calculateCollatz(int number){
+void calculateCollatz(long number){
     cout << to_string(number) << ",";
     if (number == 1 || number == 2 ){
         cout << "\n";
     }else{
         if (number % 2 == 0){
-            int final_number = number / 2;
+            double long final_number = number / 2;
             calculateCollatz(final_number);
         }else{
-            int final_number = number * 3 + 1;
+            double long final_number = number * 3 + 1;
             calculateCollatz(final_number);
         }
     }
@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     int numbers = strtol(argv[1], &p, 10);
-    for (int i = 1; i <= numbers;i++){
+    for (double long i = 1; i <= numbers;i++){
         calculateCollatz(i);
     }
     return 0;
